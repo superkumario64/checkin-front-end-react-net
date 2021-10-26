@@ -116,6 +116,11 @@ const Login = () => {
 
         </View>
       )}
+      {fetchError && (
+        <View title="Check your internet connection">
+          <p>You may be connected to the wrong wifi network.</p>
+        </View>
+      )}
     </div>
   )
 };
